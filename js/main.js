@@ -38,7 +38,7 @@ $(function(){
 			$({pagePosDelta:0, flontPagePosDelta:0}).animate({pagePosDelta:50, flontPagePosDelta:600}, {
 				duration:500,
 				progress:function(){
-					for (var i = 0; i < self.pages.length; i++) {
+					for (let i = 0; i < self.pages.length; i++) {
 						if(beforePoses[i].z > -50){
 							self.pages[i].position.x = beforePoses[i].x - this.flontPagePosDelta;
 							self.pages[i].position.y = beforePoses[i].y - this.flontPagePosDelta;
@@ -71,7 +71,7 @@ $(function(){
 			$({pagePosDelta:0, flontPagePosDelta:0}).animate({pagePosDelta:50, flontPagePosDelta:600}, {
 				duration:500,
 				progress:function(){
-					for (var i = 0; i < self.pages.length; i++) {
+					for (let i = 0; i < self.pages.length; i++) {
 						if(beforePoses[i].z > 0){
 							self.pages[i].position.x = beforePoses[i].x + this.flontPagePosDelta;
 							self.pages[i].position.y = beforePoses[i].y + this.flontPagePosDelta;
