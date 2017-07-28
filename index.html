@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>進捗発表</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<div id="pages">
+		<div class="page">
+			<h1>ProLab合宿のまとめ</h1>
+		</div>
+		<div class="page">
+			<h1>まずは自己紹介</h1>
+			<h2>Fukusan(福さん)</h2>
+			<img id="icon" src="./img/icon.png">
+			<p>適当にHTML、CSS、JavaScript(主にJavaScript)を<br>書いている人です</p>	
+			<ul>
+				<li>Twitter : <a href="https://twitter.com/Fukusan64">@Fukusan64</a><br></li>
+				<li>codePen : <a href="https://codepen.io/fukusan">@Fukusan</a><br></li>
+				<li>gitHub : <a href="https://github.com/Fukusan64">Fukusan64</a></li>
+			</ul>
+		</div>
+		<div class="page">
+			<h1>今回の進捗</h1>
+			<div>
+				<p class="strong hoverFadeIn">これ</p>
+			</div>
+		</div>
+		<div class="page">
+			<h1>実装について</h1>
+			<h2>使用ライブラリ</h2>
+			<ul>
+				<li class="hoverAnimation">jQuery (やっぱり使っちゃう)</li>
+				<li class="hoverAnimation">three.js (3D表示ができる)</li>
+				<li class="hoverAnimation">CSS3DRenderer (three.jsでHTMLの要素が表示できるようになる)</li>
+			</ul>
+			<h2>内部的にやってること</h2>
+			<ul>
+				<li class="hoverAnimation">スライドを定義する</li>
+				<li class="hoverAnimation">スライドを表示する</li>
+				<li class="hoverAnimation">スライドを送る/戻す</li>
+			</ul>
+		</div>
+		<div class="page">
+			<h1>実装について(2)</h1>
+			<h2>スライドを送る/戻す</h2>
+			<ol>
+				<li>スライドが移動中でないことを確認</li>
+				<li>スライドが移動中であることを記録</li>
+				<li>今の全てのスライドの位置を記録</li>
+				<li>移動後のスライドの位置にアニメーションをかけながら移動する</li>
+				<li>スライドが移動中でないことを記録</li>
+			</ol>
+
+		</div>
+		<div class="page">
+			<h1>終わり</h1>
+			<p>ご清聴ありがとうございました</p>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src ="./js/three.min.js"></script>
+	<script type="text/javascript" src="./js/CSS3DRenderer.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

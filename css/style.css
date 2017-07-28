@@ -1,0 +1,67 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#display{
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#pages{
+	display: none;
+}
+.page{
+	background-image: url("../img/pattern.png");
+	background-size: cover;
+	width: 640px;
+	height: 360px;
+	margin: 0;
+	padding: 30px;
+	background-color: #fff;
+	border:  1px solid #000;
+}
+
+.page h1{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 10px 0;
+	height: 60px;
+}
+.page h2{
+	font-size: 20px;
+}
+
+#icon{
+	float: right;
+	width: 200px;
+	height: auto;
+}
+.strong{
+	color: #FF2100;
+	font-size: 100px;
+}
+.page:nth-child(3) div{
+	height: calc(100% - 60px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hoverAnimation{
+	transition: 0.5s;
+}
+
+.hoverAnimation:hover{
+	color: red;
+	text-decoration: underline;
+}
+.hoverFadeIn{
+	opacity: 0;
+	transition: 3s;
+}
+.hoverFadeIn:hover{
+	opacity: 1;
+}
